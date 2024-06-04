@@ -2,10 +2,10 @@ import { Container } from "react-bootstrap";
 import Header from "./components/Header";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import MemberSave from "./pages/MemberSave";
-import Login from "./pages/Login";
-import MemberList from "./pages/MemberList";
-import MemberDetail from "./pages/MemberDetail";
+import MemberSave from "./member/MemberSave";
+import Login from "./member/Login";
+import MemberList from "./member/MemberList";
+import MemberDetail from "./member/MemberDetail";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/memberSave" exact={true} element={<MemberSave />} />
           <Route path="/login" exact={true} element={<Login />} />
           <Route path="/memberList" exact={true} element={<MemberList />} />
-          <Route path="/detail/:id" exact={true} element={<MemberDetail />} />
+          <Route path="/memberdetail/:id" exact={true} element={<MemberDetail />} />
         </Routes>
       </Container>
     </div>

@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 const Member = (props) => {
 
     const {id, email, name} = props.member;
+    console.log(id);
+    console.log(email);
+    console.log(name);
+
 
     return(
         <Card>
@@ -12,7 +16,7 @@ const Member = (props) => {
                 <Card.Title>{name}</Card.Title>
                 <Card.Text>{id}</Card.Text>
                 <Card.Text>{email}</Card.Text>
-                <Link to={'/detail/' + id}>상세보기</Link>
+                <Link to={'/memberdetail/' + id}>상세보기</Link>
             </Card.Body>
         </Card>
     );
