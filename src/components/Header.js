@@ -14,6 +14,8 @@ export default function Header() {
             <Link to="/memberSave" className='nav-link'>회원가입</Link>
             <Link to="/login" className='nav-link'>로그인</Link>
             <Link to="/memberList" className='nav-link'>회원리스트</Link>
+            <Link to="/bookUpload" className='nav-link'>책 등록하기</Link>
+            <Link to="/bookList" className='nav-link'>책 리스트</Link>
           </Nav>
         </Container>
       </Navbar>
